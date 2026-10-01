@@ -1,0 +1,685 @@
+{
+  "archive": "dataset.zip",
+  "directories": {
+    "Dataset": 3,
+    "Dataset/test/cive": 7,
+    "Dataset/test/cive patch": 2310,
+    "Dataset/test/exg": 7,
+    "Dataset/test/exg patch": 2310,
+    "Dataset/test/hsv_h": 7,
+    "Dataset/test/hsv_h patch": 2310,
+    "Dataset/test/img": 7,
+    "Dataset/test/img patch": 2310,
+    "Dataset/test/msk": 7,
+    "Dataset/test/msk patch": 2310,
+    "Dataset/test/ngrdi": 7,
+    "Dataset/test/ngrdi patch": 2310,
+    "Dataset/test/vari": 7,
+    "Dataset/test/vari patch": 2310,
+    "Dataset/test_different_bbch/BBCH15/cive": 1,
+    "Dataset/test_different_bbch/BBCH15/cive patch": 110,
+    "Dataset/test_different_bbch/BBCH15/exg": 1,
+    "Dataset/test_different_bbch/BBCH15/exg patch": 110,
+    "Dataset/test_different_bbch/BBCH15/hsv_h": 1,
+    "Dataset/test_different_bbch/BBCH15/hsv_h patch": 110,
+    "Dataset/test_different_bbch/BBCH15/img": 1,
+    "Dataset/test_different_bbch/BBCH15/img patch": 110,
+    "Dataset/test_different_bbch/BBCH15/msk": 1,
+    "Dataset/test_different_bbch/BBCH15/msk patch": 110,
+    "Dataset/test_different_bbch/BBCH15/ngrdi": 1,
+    "Dataset/test_different_bbch/BBCH15/ngrdi patch": 110,
+    "Dataset/test_different_bbch/BBCH15/vari": 1,
+    "Dataset/test_different_bbch/BBCH15/vari patch": 110,
+    "Dataset/test_different_bbch/BBCH19/cive": 1,
+    "Dataset/test_different_bbch/BBCH19/cive patch": 110,
+    "Dataset/test_different_bbch/BBCH19/exg": 1,
+    "Dataset/test_different_bbch/BBCH19/exg patch": 110,
+    "Dataset/test_different_bbch/BBCH19/hsv_h": 1,
+    "Dataset/test_different_bbch/BBCH19/hsv_h patch": 110,
+    "Dataset/test_different_bbch/BBCH19/img": 1,
+    "Dataset/test_different_bbch/BBCH19/img patch": 110,
+    "Dataset/test_different_bbch/BBCH19/msk": 1,
+    "Dataset/test_different_bbch/BBCH19/msk patch": 110,
+    "Dataset/test_different_bbch/BBCH19/ngrdi": 1,
+    "Dataset/test_different_bbch/BBCH19/ngrdi patch": 110,
+    "Dataset/test_different_bbch/BBCH19/vari": 1,
+    "Dataset/test_different_bbch/BBCH19/vari patch": 110,
+    "Dataset/trainval/cive": 12,
+    "Dataset/trainval/cive patch": 31680,
+    "Dataset/trainval/exg": 12,
+    "Dataset/trainval/exg patch": 31680,
+    "Dataset/trainval/hsv_h": 12,
+    "Dataset/trainval/hsv_h patch": 31680,
+    "Dataset/trainval/img": 12,
+    "Dataset/trainval/img patch": 31680,
+    "Dataset/trainval/msk": 12,
+    "Dataset/trainval/msk patch": 31680,
+    "Dataset/trainval/ngrdi": 12,
+    "Dataset/trainval/ngrdi patch": 31680,
+    "Dataset/trainval/vari": 12,
+    "Dataset/trainval/vari patch": 31680
+  },
+  "originals": [
+    {
+      "archive_path": "Dataset/test/img/test_01.jpg",
+      "source_id": "Dataset/test/test_01",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "2540de8df29096fd4fdb167b01887772b7939bea0b4a386a0d84a9e96d2ff1fa",
+      "pixel_sha256": "e74287c0adb102b496ceb244406efc695ee96cd0a8349f771aadb4fe3cdd2cdd"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_02.jpg",
+      "source_id": "Dataset/test/test_02",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "1778e05c74d1dc00bf36ada9b93cb4f911637489fe8f7657a56530f3d37d0fc5",
+      "pixel_sha256": "de14d6bed2e0f2283074f075d47603ed9db4ddd3841cfe1eed9d4bc2869f0b40"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_03.jpg",
+      "source_id": "Dataset/test/test_03",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "d8bd90d33c3d01e51e2788c228f1fcaeacecd9701676f739815c95c5a16f7da7",
+      "pixel_sha256": "a36ff0fae1df4e1d983f8912496cb26ce6026695e8ea8aad1bed199cc74064f6"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_04.jpg",
+      "source_id": "Dataset/test/test_04",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "079e995ff3392d69ca02fa699ecb2cad5395e6fa26d25141c9b1f197d54aeb80",
+      "pixel_sha256": "85fe308021e7c52db82158f7534ed5d5deb7a415ea5eb82357c99c93024d4411"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_05.jpg",
+      "source_id": "Dataset/test/test_05",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "172cb77f01605fc51dff20a4f134512b07b6d4edfd8d6c3ea5ac201b9e9056e3",
+      "pixel_sha256": "1550703caae21d58d0481eb61828373e4b65524702dcf9c27a24a8cf0f22a9e4"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_06.jpg",
+      "source_id": "Dataset/test/test_06",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "d0c7afbc051a5632f0e9610da7fb831a4f9dfee91414bbd6c598b2e6e70ea79b",
+      "pixel_sha256": "80739bb8b5fcde5ec8c91f13ed4e02f886659451138b17ac1ad95960f32a5fac"
+    },
+    {
+      "archive_path": "Dataset/test/img/test_07.jpg",
+      "source_id": "Dataset/test/test_07",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "6a31181dcbf230a0ec2ae523a89829b33da2895a7b425842b11385b336218b95",
+      "pixel_sha256": "9cb187c6b9043321e08a2151d8acaafb2cc3f68068bfa9b8a1a89b2fa98b9c72"
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_01.png",
+      "source_id": "Dataset/test/test_01",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "f7c30a4cc0bf0bdfcf221170fe18e82e307540388989d961eb62cc23bf58bab6",
+      "pixel_sha256": "5c64993b47aa0cfb41445bbfc3dfb3585245987abd084f83dcb78385079ac737",
+      "class_pixels": {
+        "(31, 119, 180)": 426206,
+        "(199, 199, 199)": 19503181,
+        "(255, 127, 14)": 32469
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_02.png",
+      "source_id": "Dataset/test/test_02",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "253f2cefcfcc206327336bfcfead2b6ed39500738b00539bade4288740a0ea9e",
+      "pixel_sha256": "1182135d07b0088cebb749432fd9e38d2070f0b6b73e19e7a11cc37f93249236",
+      "class_pixels": {
+        "(31, 119, 180)": 587364,
+        "(199, 199, 199)": 19162506,
+        "(255, 127, 14)": 211986
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_03.png",
+      "source_id": "Dataset/test/test_03",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "74b529f7a5ab65e78adf1fc50c39309a27a1b5a19e65ca2c42d8afdbc7aff5fd",
+      "pixel_sha256": "0956012b29abed784d5e47dd3d4d8ee9e2399ac6a37758bc22b0744378512c2f",
+      "class_pixels": {
+        "(31, 119, 180)": 5343,
+        "(199, 199, 199)": 19782933,
+        "(255, 127, 14)": 173580
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_04.png",
+      "source_id": "Dataset/test/test_04",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "8a5d67abf4e22e19fceeed2f7fbfb737abfc3f624d1a09f8fbd327fc881d61de",
+      "pixel_sha256": "fddc0380b8d139ec65ccb4eab96f0ed34d9638d40f7a9c427fba8097436e14f2",
+      "class_pixels": {
+        "(31, 119, 180)": 104083,
+        "(199, 199, 199)": 19821175,
+        "(255, 127, 14)": 36598
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_05.png",
+      "source_id": "Dataset/test/test_05",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "027cb357823b88557311e8b732a2f42f05c537f3bc1d363ac19f92f6315e3b7a",
+      "pixel_sha256": "f0e1fae23177ec481365068bd21e5f1db59bcd2d21019e35c6bea0ca1fc3c772",
+      "class_pixels": {
+        "(31, 119, 180)": 112276,
+        "(199, 199, 199)": 19801835,
+        "(255, 127, 14)": 47745
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_06.png",
+      "source_id": "Dataset/test/test_06",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "b08cdef7c40cdf03c87b73668da7e025a2696f591e9fd7ac23555d84a4fd9241",
+      "pixel_sha256": "96cc8331ca0557f6e96370361dd2738136faa83c9f926759885b17c2a0ce13d9",
+      "class_pixels": {
+        "(31, 119, 180)": 10876,
+        "(199, 199, 199)": 19913952,
+        "(255, 127, 14)": 37028
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test/msk/test_07.png",
+      "source_id": "Dataset/test/test_07",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "fb217d1a2f13429fad831a2f5b911c257c853e205df6a330d46262eb2ccb88b4",
+      "pixel_sha256": "b849a491b19c65a244998dccdc680e70ecbc27123c00dbe2a6f651999f2fb130",
+      "class_pixels": {
+        "(31, 119, 180)": 683,
+        "(199, 199, 199)": 19931013,
+        "(255, 127, 14)": 30160
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test_different_bbch/BBCH15/img/bbch15_img.jpg",
+      "source_id": "Dataset/test_different_bbch/BBCH15/bbch15_img",
+      "size": [
+        2560,
+        2816
+      ],
+      "mode": "RGB",
+      "sha256": "b391700a4f18a069026bee133f781e3329f8a6687e922ef93ade7bbb1fc04bda",
+      "pixel_sha256": "296ddd0c52a98b858fd1e7308c38b4fe54d344a8f6f39b28c52959c90981c16e"
+    },
+    {
+      "archive_path": "Dataset/test_different_bbch/BBCH15/msk/bbch15_msk.png",
+      "source_id": "Dataset/test_different_bbch/BBCH15/bbch15_msk",
+      "size": [
+        2560,
+        2816
+      ],
+      "mode": "RGB",
+      "sha256": "5f32882bd53907d00f0185dc43d9d09d14070dedc1d145b1c754fe4386dd4a6d",
+      "pixel_sha256": "d3ffff49e947709a248ed20e63b300ad12dba657a459784ca44332306f7ec42b",
+      "class_pixels": {
+        "(31, 119, 180)": 117266,
+        "(199, 199, 199)": 6925521,
+        "(255, 127, 14)": 166173
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/test_different_bbch/BBCH19/img/bbch19_img.jpg",
+      "source_id": "Dataset/test_different_bbch/BBCH19/bbch19_img",
+      "size": [
+        2560,
+        2816
+      ],
+      "mode": "RGB",
+      "sha256": "6fac2f9f1cef1b3e25fa9994f0035b204042c3e41be92fe6687592f16d4b5ebd",
+      "pixel_sha256": "56c07f117541f0340acbf06c23aaa8dd39f099ca71b1037a0c8aa11289d426f2"
+    },
+    {
+      "archive_path": "Dataset/test_different_bbch/BBCH19/msk/bbch19_msk.png",
+      "source_id": "Dataset/test_different_bbch/BBCH19/bbch19_msk",
+      "size": [
+        2560,
+        2816
+      ],
+      "mode": "RGB",
+      "sha256": "7e107c2c4298ae99618ebeb2a587263af2ba64afb3542c177930ecb7be5faff0",
+      "pixel_sha256": "d8a8bd444803f68a9f3275277609b6fb96563ed01e0e68859ed6eae0ed2f9aa0",
+      "class_pixels": {
+        "(31, 119, 180)": 313342,
+        "(199, 199, 199)": 5840178,
+        "(255, 127, 14)": 1055440
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_00.jpg",
+      "source_id": "Dataset/trainval/trainval_00",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "49deb49be9b87ca64118eeccd35acfcd5696e9f28676145db83a6e536444a549",
+      "pixel_sha256": "8417713725064b95134d60f147358c614300b2c6d4ddb87171d12f3446598daf"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_01.jpg",
+      "source_id": "Dataset/trainval/trainval_01",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "c0a55a51b1aa09b5a5b5e77b1be8e8476ea2ada9a66b2670dbe1049dabf713b8",
+      "pixel_sha256": "41f0b87a381e22703e6694934a740b58cb146ce2beaec5247e9f777f898d0381"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_02.jpg",
+      "source_id": "Dataset/trainval/trainval_02",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "f1b9ea167ad0372747246bae333779e8ababfe3ecf88e941514130f579ff1b89",
+      "pixel_sha256": "6e9bbc66aec61538c2697a4dc4c62de7798b090acf4752f7c66bcdce28374d6a"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_03.jpg",
+      "source_id": "Dataset/trainval/trainval_03",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "b19cda1038ea5c82be7da27b81ddcbaf9cf1d737e306a3914b6c5a47ff7a81a8",
+      "pixel_sha256": "8e875effbf3d27ebd359a673fb8b8c2b8092c8320d6fc4d9192ce0285f839d40"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_04.jpg",
+      "source_id": "Dataset/trainval/trainval_04",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "f59190436688876e167d3085d0537987861d1c0ddc8f38b493c6cd9ede89da49",
+      "pixel_sha256": "a76ba86e271e8bee75ac5f586bd13ba70aa280a6ff52a2f058a4c86ab32c81e8"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_05.jpg",
+      "source_id": "Dataset/trainval/trainval_05",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "b52c14a71c3a640da20f0696e6e5a45d3cff96fcb669d13d9a3454e02905fe83",
+      "pixel_sha256": "47ed0a9bf3579b70b6f47d4edc7d58359feac97969f12877a8a295123928e64c"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_06.jpg",
+      "source_id": "Dataset/trainval/trainval_06",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "d5dceee75b4473e6f151b7ccdf6418d790d596307b2bdcbbae95199cd16ab01e",
+      "pixel_sha256": "f98d176b3d57db4edf8ff7e01d99ec5b1c85a0f44de606243d7411686f8619e1"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_07.jpg",
+      "source_id": "Dataset/trainval/trainval_07",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "c2ebd2fbc649b06c4c4ec6d1c19694c2833186f5c6947524fda057e0b58c9a14",
+      "pixel_sha256": "8193b91602faa7edfa0bda5bb1f73269e90b55e2540667053e8d4f7a8cc03975"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_08.jpg",
+      "source_id": "Dataset/trainval/trainval_08",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "6135975df5e4676d48787a5aa50b47d0876b5726e0016081df7bb778566a8ee6",
+      "pixel_sha256": "66db6667bee17160e5144e3dadbc0357002820f678dc5d836e09b7f73b876094"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_09.jpg",
+      "source_id": "Dataset/trainval/trainval_09",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "170138798d32a149331240dc8fe82e162ef515256aee6157ae12e1634066777b",
+      "pixel_sha256": "018e987904302da56f18e9ea640e09636fd020bd5602f9c9038b692ee1f9612d"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_10.jpg",
+      "source_id": "Dataset/trainval/trainval_10",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "028004ec21cd5f4f59a00e86521ba2b40ec58753129f445438b0cd6345674246",
+      "pixel_sha256": "7c16e0370f0cbe29fb5bbcb14f910325ba92be1d5754af5fe4260cece4836251"
+    },
+    {
+      "archive_path": "Dataset/trainval/img/trainval_11.jpg",
+      "source_id": "Dataset/trainval/trainval_11",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "17562e1984d29af094cb50df015a88ea3c2924d0869ba0ab18e900ac9d549ed1",
+      "pixel_sha256": "077870a87e02a63f72d9afa2c6ce61cf03f77888dfda317e51f0fe417210b238"
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_00.png",
+      "source_id": "Dataset/trainval/trainval_00",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "787615f6203dc256e15b12decc20a529fba503ae427360863d6c2faa486ef51a",
+      "pixel_sha256": "9826478f75b0a3f8d87d4772cbe1f3cee033a5c01b704fc9aa4706ad8e193bfc",
+      "class_pixels": {
+        "(31, 119, 180)": 537858,
+        "(199, 199, 199)": 19215037,
+        "(255, 127, 14)": 208961
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_01.png",
+      "source_id": "Dataset/trainval/trainval_01",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "d113dc26c5403c5a8a1105c7e5a21cbd328a09312f6bab42153d5c6668558463",
+      "pixel_sha256": "17040b588988fde57f50d391e6c2fce3d8c2baf37e393202cd160500a83c7ff9",
+      "class_pixels": {
+        "(31, 119, 180)": 782928,
+        "(199, 199, 199)": 19025018,
+        "(255, 127, 14)": 153910
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_02.png",
+      "source_id": "Dataset/trainval/trainval_02",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "6da00b760b0fa4669c3c1eb1440943d21a36aab7fe78e5d845466977dfdeba09",
+      "pixel_sha256": "f5555525581b0173cd461e2948b8f90910fd2c6387253fbe7234d169e302a879",
+      "class_pixels": {
+        "(31, 119, 180)": 743540,
+        "(199, 199, 199)": 19102615,
+        "(255, 127, 14)": 115701
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_03.png",
+      "source_id": "Dataset/trainval/trainval_03",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "5ba5b3f9355a28adda558a180fc26cedde4baac4a031e06e07571f804901c18e",
+      "pixel_sha256": "97ccb4b5a01c3109dbe9d010c036e009f1b6f8038e5adeeb7aa3f406cc5b4b9a",
+      "class_pixels": {
+        "(31, 119, 180)": 311167,
+        "(199, 199, 199)": 19578417,
+        "(255, 127, 14)": 72272
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_04.png",
+      "source_id": "Dataset/trainval/trainval_04",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "1159dc3f3c7e25f06626f819d37fa08efe8eaeccd95d42996075fb07a8da6cac",
+      "pixel_sha256": "9fe2417fedc4f35d16ae9262a1b580b261beea3d1afa918c40a65f40c656370d",
+      "class_pixels": {
+        "(31, 119, 180)": 34082,
+        "(199, 199, 199)": 19907227,
+        "(255, 127, 14)": 20547
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_05.png",
+      "source_id": "Dataset/trainval/trainval_05",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "9c107cf3b15e15650ed687e8a862d2bf067a918854c016cce6c215d26da0bac8",
+      "pixel_sha256": "e36e15cd773bc2283dd596b5075ce0234ca6d69c1ca41b90addc14859fd280f3",
+      "class_pixels": {
+        "(31, 119, 180)": 105052,
+        "(199, 199, 199)": 19801685,
+        "(255, 127, 14)": 55119
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_06.png",
+      "source_id": "Dataset/trainval/trainval_06",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "749647c8fa0c7d79b65dedefcde0bb8a7605b9a41de13ae9b8e009a458c27571",
+      "pixel_sha256": "4f592124c4450395050a61cb6be097abe7c65f28e2d3f4b6f6a26e3dc443db57",
+      "class_pixels": {
+        "(31, 119, 180)": 58777,
+        "(199, 199, 199)": 19873811,
+        "(255, 127, 14)": 29268
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_07.png",
+      "source_id": "Dataset/trainval/trainval_07",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "bfc642f2ff1635954d0523b22bc71d694e1947c1ecc95172d50a4f355e1366df",
+      "pixel_sha256": "d49e7d8d19cacfc2896a2be40e043969284ac739adfcfd3c7bbc8c05e1bdb49c",
+      "class_pixels": {
+        "(31, 119, 180)": 630989,
+        "(199, 199, 199)": 18989809,
+        "(255, 127, 14)": 341058
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_08.png",
+      "source_id": "Dataset/trainval/trainval_08",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "9ba937188786f6c8663b30eb51b5319a6373e0c810757c62675e97041097b024",
+      "pixel_sha256": "1f12f4c6613f9ae37a3de8cc2fe684a47bda85c10472804dc3cac9fee37fb7fa",
+      "class_pixels": {
+        "(31, 119, 180)": 726928,
+        "(199, 199, 199)": 19155110,
+        "(255, 127, 14)": 79818
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_09.png",
+      "source_id": "Dataset/trainval/trainval_09",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "aff227ff0a4bf0c4696bb6af2f8f1e59f3356bd46ab4fb746beffa30e82fcea2",
+      "pixel_sha256": "e7ac25df13c3754901847c0b2c32e56b89c13b9b65d426317c20d16d5dcc6c3b",
+      "class_pixels": {
+        "(31, 119, 180)": 753953,
+        "(199, 199, 199)": 19130663,
+        "(255, 127, 14)": 77240
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_10.png",
+      "source_id": "Dataset/trainval/trainval_10",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "c8c4fea5fa4b4956bf7dabb4432421f128a8b34d186fc5b4a76b83138d905fd3",
+      "pixel_sha256": "a6893a04150500af7cd9cbfb53931f687df92e2275cf94b5a62061efd54b74e9",
+      "class_pixels": {
+        "(31, 119, 180)": 2124,
+        "(199, 199, 199)": 19934662,
+        "(255, 127, 14)": 25070
+      },
+      "unknown_pixels": 0
+    },
+    {
+      "archive_path": "Dataset/trainval/msk/trainval_11.png",
+      "source_id": "Dataset/trainval/trainval_11",
+      "size": [
+        5472,
+        3648
+      ],
+      "mode": "RGB",
+      "sha256": "a26058a90e9c90b60b40659adac6e56c10d0675c0edb7962d7648be5efd0ea3d",
+      "pixel_sha256": "a16da6b411a6e24176c533ac40cbdd9909f89bf96942843b35ee6ba561df7b80",
+      "class_pixels": {
+        "(31, 119, 180)": 693897,
+        "(199, 199, 199)": 19042248,
+        "(255, 127, 14)": 225711
+      },
+      "unknown_pixels": 0
+    }
+  ],
+  "archive_sha256": "1cd9eddab9c5e132f679f0b223591c2ef549282920b447a693525f973e4775e3",
+  "crc_check": "passed_all_entries",
+  "duplicate_original_rgb_pixels": [],
+  "patch_filename_counts": {
+    "trainval": {
+      "trainval_00": 2640,
+      "trainval_01": 2640,
+      "trainval_02": 2640,
+      "trainval_03": 2640,
+      "trainval_04": 2640,
+      "trainval_05": 2640,
+      "trainval_06": 2640,
+      "trainval_07": 2640,
+      "trainval_08": 2640,
+      "trainval_09": 2640,
+      "trainval_10": 2640,
+      "trainval_11": 2640
+    },
+    "test": {
+      "test_01": 330,
+      "test_02": 330,
+      "test_03": 330,
+      "test_04": 330,
+      "test_05": 330,
+      "test_06": 330,
+      "test_07": 330
+    }
+  },
+  "notes": [
+    "Filename-prefix mapping is a candidate, not a verified patch-to-source mapping.",
+    "Original images can be repatched with explicit source IDs; no split is created here.",
+    "Distinct hashes exclude exact duplicates only, not spatial overlap or shared flights."
+  ]
+}

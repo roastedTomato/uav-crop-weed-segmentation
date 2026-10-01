@@ -1,0 +1,236 @@
+{
+  "scope": "Original RGB images and masks only; no model evaluation or split changes.",
+  "groups": {
+    "trainval": 12,
+    "test": 7,
+    "extra_bbch15": 1,
+    "extra_bbch19": 1
+  },
+  "checked_pairs": 21,
+  "pairing_and_dimensions": "passed",
+  "mask_colors": "passed",
+  "visual_review": "confirmed_by_student",
+  "visual_review_date": "2026-10-01",
+  "visual_review_result": "I manually reviewed the three displayed trainval crops and confirmed no image-mask alignment issues.",
+  "files": [
+    {
+      "group": "trainval",
+      "source_id": "trainval_00",
+      "image_path": "data/raw/trainval/img/trainval_00.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_00.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_01",
+      "image_path": "data/raw/trainval/img/trainval_01.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_01.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_02",
+      "image_path": "data/raw/trainval/img/trainval_02.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_02.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_03",
+      "image_path": "data/raw/trainval/img/trainval_03.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_03.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_04",
+      "image_path": "data/raw/trainval/img/trainval_04.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_04.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_05",
+      "image_path": "data/raw/trainval/img/trainval_05.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_05.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_06",
+      "image_path": "data/raw/trainval/img/trainval_06.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_06.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_07",
+      "image_path": "data/raw/trainval/img/trainval_07.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_07.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_08",
+      "image_path": "data/raw/trainval/img/trainval_08.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_08.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_09",
+      "image_path": "data/raw/trainval/img/trainval_09.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_09.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_10",
+      "image_path": "data/raw/trainval/img/trainval_10.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_10.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "trainval",
+      "source_id": "trainval_11",
+      "image_path": "data/raw/trainval/img/trainval_11.jpg",
+      "mask_path": "data/raw/trainval/msk/trainval_11.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_01",
+      "image_path": "data/raw/test/img/test_01.jpg",
+      "mask_path": "data/raw/test/msk/test_01.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_02",
+      "image_path": "data/raw/test/img/test_02.jpg",
+      "mask_path": "data/raw/test/msk/test_02.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_03",
+      "image_path": "data/raw/test/img/test_03.jpg",
+      "mask_path": "data/raw/test/msk/test_03.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_04",
+      "image_path": "data/raw/test/img/test_04.jpg",
+      "mask_path": "data/raw/test/msk/test_04.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_05",
+      "image_path": "data/raw/test/img/test_05.jpg",
+      "mask_path": "data/raw/test/msk/test_05.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_06",
+      "image_path": "data/raw/test/img/test_06.jpg",
+      "mask_path": "data/raw/test/msk/test_06.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "test",
+      "source_id": "test_07",
+      "image_path": "data/raw/test/img/test_07.jpg",
+      "mask_path": "data/raw/test/msk/test_07.png",
+      "width": 5472,
+      "height": 3648,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "extra_bbch15",
+      "source_id": "bbch15",
+      "image_path": "data/raw/test_different_bbch/BBCH15/img/bbch15_img.jpg",
+      "mask_path": "data/raw/test_different_bbch/BBCH15/msk/bbch15_msk.png",
+      "width": 2560,
+      "height": 2816,
+      "unknown_color_pixels": 0
+    },
+    {
+      "group": "extra_bbch19",
+      "source_id": "bbch19",
+      "image_path": "data/raw/test_different_bbch/BBCH19/img/bbch19_img.jpg",
+      "mask_path": "data/raw/test_different_bbch/BBCH19/msk/bbch19_msk.png",
+      "width": 2560,
+      "height": 2816,
+      "unknown_color_pixels": 0
+    }
+  ],
+  "visual_windows": [
+    {
+      "source_id": "trainval_01",
+      "crop_box": [
+        3072,
+        0,
+        3840,
+        768
+      ]
+    },
+    {
+      "source_id": "trainval_03",
+      "crop_box": [
+        4608,
+        0,
+        5376,
+        768
+      ]
+    },
+    {
+      "source_id": "trainval_08",
+      "crop_box": [
+        3072,
+        1536,
+        3840,
+        2304
+      ]
+    }
+  ],
+  "visual_figure": "artifacts/figures/file_inspection_overlays.png"
+}

@@ -1,0 +1,26 @@
+# Only publish the selected project sources and reproducibility metadata
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/project_todo.ipynb
+!/project_plan.md
+!/archive/
+/archive/*
+!/archive/audit_dataset.py
+!/archive/prepare_splits.py
+!/artifacts/
+/artifacts/*
+!/artifacts/DATA_AUDIT.json
+!/artifacts/FILE_INSPECTION.json
+!/artifacts/SOURCE_SPLITS.json
+!/artifacts/SPLIT_CHECKS.json
+!/artifacts/PATCH_MANIFEST.jsonl
+
+# Generated and private files
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/.DS_Store
+**/.env
+**/*.pem
+**/*.key

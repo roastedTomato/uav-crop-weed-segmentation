@@ -1,0 +1,8 @@
+numpy
+Pillow
+matplotlib
+jupyterlab
+
+# Planned model-training stages
+tensorflow
+keras

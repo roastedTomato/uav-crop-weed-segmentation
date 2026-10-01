@@ -1,0 +1,79 @@
+{
+  "seed": 42,
+  "patch_size": 256,
+  "ignore_label": 255,
+  "class_colors": [
+    [
+      199,
+      199,
+      199
+    ],
+    [
+      31,
+      119,
+      180
+    ],
+    [
+      255,
+      127,
+      14
+    ]
+  ],
+  "source_counts": {
+    "val": 3,
+    "train": 9,
+    "test": 7,
+    "extra_bbch15": 1,
+    "extra_bbch19": 1
+  },
+  "patch_counts": {
+    "val": 990,
+    "train": 2970,
+    "test": 2310,
+    "extra_bbch15": 110,
+    "extra_bbch19": 110
+  },
+  "class_pixels": {
+    "val": [
+      58078657,
+      1227624,
+      579287
+    ],
+    "train": [
+      174677645,
+      4153671,
+      825388
+    ],
+    "test": [
+      137916595,
+      1246831,
+      569566
+    ],
+    "extra_bbch15": [
+      6925521,
+      117266,
+      166173
+    ],
+    "extra_bbch19": [
+      5840178,
+      313342,
+      1055440
+    ]
+  },
+  "source_intersections": {
+    "extra_bbch15 / extra_bbch19": [],
+    "extra_bbch15 / test": [],
+    "extra_bbch15 / train": [],
+    "extra_bbch15 / val": [],
+    "extra_bbch19 / test": [],
+    "extra_bbch19 / train": [],
+    "extra_bbch19 / val": [],
+    "test / train": [],
+    "test / val": [],
+    "train / val": []
+  },
+  "all_saved_patches_verified": true,
+  "coverage_verified": true,
+  "exact_duplicate_originals": 0,
+  "limitation": "Flight identity and spatial overlap across different originals remain unverified."
+}
