@@ -163,17 +163,72 @@ English: English code and execution outputs are in Section 1.4 of `project_todo.
 
 ### 1.5 来源与泄漏风险 / Source Mapping and Leakage Risks
 
-- [ ] 确认 patches 与原始 UAV 图像的对应关系。 / Confirm patch-to-original-image mapping.
-- [ ] 核实已有 train/test 划分依据。 / Verify the basis of the supplied train/test split.
-- [ ] 检查可用航次及空间重叠信息，记录未知限制。 / Review available flight and spatial overlap information and document unresolved limitations.
+**查验范围与方法 / Review Scope and Method — 2026-10-02**
+
+中文：本节核验原图来源、已有 patches 的对应关系、发布者的划分流程，以及拍摄元数据和空间相关性。只进行来源核验，不训练模型、不读取模型测试表现，也不修改划分。代码位于英文 notebook 的 1.5。
+
+English: This section reviews original-image provenance, existing patch mappings, the publisher's splitting workflow, capture metadata, and spatial correlations. It performs provenance checks only, without training models, inspecting model test performance, or modifying splits. The code is in Section 1.5 of the English notebook.
+
+**1. Patch 与原图对应关系 / Patch-to-Original Mapping**
+
+中文：实际文件名由原图名称加图块序号组成，例如 `trainval_01165.png` 对应原图 `trainval_01` 的第 165 号图块（序号从 0 开始）。代码解析来源编号，按每行 22 个、步长 256 的裁剪网格恢复坐标，逐像素比较原图标签裁剪与已发布 patch 标签的有效区域。12 张 trainval 原图各 330 个未增强图块，合计 3,960 个；7 张 test 原图各 330 个，合计 2,310 个。全部 6,270 个未增强 patch 标签均通过，序号连续，均有同名 RGB patch。
+
+English: Actual filenames combine an original-image name with a zero-based patch index. For example, `trainval_01165.png` refers to patch 165 of `trainval_01`. The code parses source IDs, reconstructs coordinates on a 256-pixel-stride grid with 22 columns, and compares each published patch mask against the original mask crop over valid pixels. All 6,270 unaugmented masks passed: 3,960 from 12 trainval originals and 2,310 from seven test originals, with 330 patches per original. Indices are continuous and each mask has a corresponding RGB patch filename.
+
+中文：这验证了未增强标签图块的来源与裁剪位置，不等于逐像素验证 JPEG RGB 图块或全部增强变换。边缘比较排除原图外补齐区域。额外 BBCH15/19 的图块对应关系未在本节核验。项目后续仍优先从原始 RGB 与标签重新切图，保存明确来源和坐标，仅在训练集在线增强。
+
+English: This verifies provenance and coordinates of unaugmented mask patches, not pixel equality of JPEG RGB crops or all augmentation transformations. Comparisons exclude padding outside the original image. Extra BBCH15/19 patch mappings were not checked here. The project will still favor repatching original RGB images and masks with explicit source IDs and coordinates, with online augmentation restricted to training data.
+
+**2. 原始集合与划分依据 / Original Groups and Split Evidence**
+
+中文：数据集已经分好了 12 张 trainval 原图、7 张 test 原图和两张额外测试图。代码检查了全部 21 张 RGB 原图，没有完全相同的图片。作者的 [切图代码](https://github.com/grimmlab/UAVWeedSegmentation/blob/main/save_patches.py#L10) 也是先从各文件夹读取原图，再切成小图块。
+
+English: The dataset already separates 12 trainval originals, seven test originals, and two extra test images. Code checks found no identical RGB images among all 21 originals. The author's [patching code](https://github.com/grimmlab/UAVWeedSegmentation/blob/main/save_patches.py#L10) also reads originals from their existing folders before cutting them into smaller patches.
+
+中文：但 trainval 还没有分成我们要用的训练集和验证集。如果直接随机分配小图块，同一张原图的图块可能同时进入这两个集合。作者的 [训练代码](https://github.com/grimmlab/UAVWeedSegmentation/blob/main/train.py#L23) 直接对图块列表进行划分，没有明确要求同一原图的图块放在一起，因此我们需要自行保证这一点。
+
+English: We still need to divide trainval into our training and validation sets. Randomly assigning individual patches could put patches from the same original image into both sets. The author's [training code](https://github.com/grimmlab/UAVWeedSegmentation/blob/main/train.py#L23) splits a list of patches without explicitly keeping patches from each original together, so we need to ensure this ourselves.
+
+中文：第二步直接按原图分配训练集和验证集，让每张原图的所有小图块和增强版本跟随它进入同一集合。第一步已完成图像检查，第二步不再重复检查。
+
+English: Step 2 will directly assign original images to training or validation, keeping all patches and augmented versions of each original in the same set. Image inspection was covered in Step 1 and will not be repeated in Step 2.
+
+**3. 拍摄时间、GPS 与空间风险 / Capture Times, GPS, and Spatial Risks**
+
+**检查原因 / Reason**
+
+中文：不同原图也可能拍到同一块地面。GPS 检查发现 `trainval_11` 与 `test_05` 距离较近，因此需要查看图片是否重叠。
+
+English: Different original images may show the same ground area. GPS screening found that `trainval_11` and `test_05` were close together, so their images needed review for overlap.
+
+**人工检查 / Manual Review**
+
+中文：我于 2026-10-02 手动检查了全部 21 张原始图像，未发现图像之间存在重叠。
+
+English: On 2026-10-02, I manually inspected all 21 original images and found no overlap between them.
+
+**结论 / Conclusion**
+
+中文：全部原始图像通过目视重叠检查。该结论来自我的人工检查，不等于已验证不同航次完全独立。
+
+English: All original images passed my visual overlap check. This finding comes from manual inspection and does not establish independence between flights.
+
+**结论与第二步要求 / Conclusion and Requirements for Step 2**
+
+中文：已确认主要未增强标签图块的原图来源，没有完全重复的大图；我手动检查全部原始图像后也未发现重叠。接下来直接把 trainval 按原图分为训练集和验证集，保留现有测试集。同次拍摄的图像可能有相似光照和地面环境，报告中需说明这一限制，可能影响模型泛化能力。
+
+English: Main unaugmented mask patches have verified original-image sources, and no originals are exact duplicates. My manual review of all original images also found no overlap. Next, divide trainval into training and validation by original image, retaining the existing test set. Images from the same capture session may share similar lighting and ground conditions; the report should acknowledge this limitation, which may affect the model generalization capability.
 
 ## 2. 数据划分 / Data Splitting
 
-- [ ] 切图和增强前按原图分组，同一原图及增强版本只属于一个集合。 / Split by original image before patching or augmentation; keep every derivative in the same split.
-- [ ] 固定随机种子与来源清单，检查航次和空间相关性。 / Fix the random seed and source manifest; review flight and spatial correlations.
-- [ ] 记录裁剪坐标、有效区域及边缘处理。 / Record crop coordinates, valid regions, and edge handling.
-- [ ] 验证来源编号无交集，统计原图和 patch 数量。 / Verify disjoint source IDs and report original-image and patch counts.
-- [ ] 保留测试集用于最终评估。 / Reserve the test set for final evaluation.
+中文：将已有 trainval 的 12 张原图按 75% / 25% 分为 9 张训练图和 3 张验证图。按原图划分，每张原图的所有图块和增强版本都跟随它进入同一集合。保留已有 7 张 test 原图及两张额外测试图，不再进行第二轮图像检查。
+
+English: Divide the 12 trainval originals into nine training images and three validation images, a 75% / 25% split. Assign each original as a whole, keeping all its patches and augmented versions in the same set. Retain the seven existing test originals and two extra test images, without a second round of image inspection.
+
+- [ ] 使用固定随机种子 42，选择 3 张验证原图，其余 9 张用于训练。 / Use a fixed random seed of 42 to select three validation originals and use the remaining nine for training.
+- [ ] 保存每张原图所属集合，供后续切图和数据加载使用。 / Save each original image's assigned set for later patching and data loading.
+- [ ] 列出训练、验证和测试集的原图名称及数量。 / List original-image names and counts for training, validation, and testing.
+- [ ] 测试集仅用于最终模型评估。 / Use test data only for final model evaluation.
 
 ## 3. 数据探索与预处理 / Data Exploration and Preprocessing
 
