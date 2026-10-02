@@ -215,21 +215,15 @@ English: All original images passed my visual overlap check. This finding comes 
 
 **结论与第二步要求 / Conclusion and Requirements for Step 2**
 
-中文：已确认主要未增强标签图块的原图来源，没有完全重复的大图；我手动检查全部原始图像后也未发现重叠。接下来直接把 trainval 按原图分为训练集和验证集，保留现有测试集。同次拍摄的图像可能有相似光照和地面环境，报告中需说明这一限制，可能影响模型泛化能力。
+中文：已确认主要未增强标签图块的原图来源，没有完全重复的大图；我手动检查全部原始图像后也未发现重叠。接下来直接把 trainval 按原图分为训练集和验证集。同次拍摄的图像可能有相似光照和地面环境，报告中需说明这一限制，可能影响模型泛化能力。
 
-English: Main unaugmented mask patches have verified original-image sources, and no originals are exact duplicates. My manual review of all original images also found no overlap. Next, divide trainval into training and validation by original image, retaining the existing test set. Images from the same capture session may share similar lighting and ground conditions; the report should acknowledge this limitation, which may affect the model generalization capability.
+English: Main unaugmented mask patches have verified original-image sources, and no originals are exact duplicates. My manual review of all original images also found no overlap. Next, divide trainval into training and validation by original image. Images from the same capture session may share similar lighting and ground conditions; the report should acknowledge this limitation, which may affect the model generalization capability.
 
 ## 2. 数据划分 / Data Splitting
 
-中文：将已有 trainval 的 12 张原图按 75% / 25% 分为 9 张训练图和 3 张验证图。按原图划分，每张原图的所有图块和增强版本都跟随它进入同一集合。保留已有 7 张 test 原图及两张额外测试图，不再进行第二轮图像检查。
+中文：使用固定随机种子 42，将 trainval 的 12 张原图分为 9 张训练图和 3 张验证图，并取得各自对应的标签路径。
 
-English: Divide the 12 trainval originals into nine training images and three validation images, a 75% / 25% split. Assign each original as a whole, keeping all its patches and augmented versions in the same set. Retain the seven existing test originals and two extra test images, without a second round of image inspection.
-
-- [ ] 使用固定随机种子 42，选择 3 张验证原图，其余 9 张用于训练。 / Use a fixed random seed of 42 to select three validation originals and use the remaining nine for training.
-- [ ] 保存每张原图所属集合，供后续切图和数据加载使用。 / Save each original image's assigned set for later patching and data loading.
-- [ ] 列出训练、验证和测试集的原图名称及数量。 / List original-image names and counts for training, validation, and testing.
-- [ ] 测试集仅用于最终模型评估。 / Use test data only for final model evaluation.
-
+English: Use random seed 42 to split the 12 trainval originals into nine training images and three validation images, with their corresponding mask paths. 
 ## 3. 数据探索与预处理 / Data Exploration and Preprocessing
 
 - [ ] 展示 RGB、标签和叠加图，检查质量与类别比例。 / Display RGB images, masks, and overlays; inspect quality and class proportions.

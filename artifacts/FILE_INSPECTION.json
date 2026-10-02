@@ -9,9 +9,7 @@
   "checked_pairs": 21,
   "pairing_and_dimensions": "passed",
   "mask_colors": "passed",
-  "visual_review": "confirmed_by_student",
-  "visual_review_date": "2026-10-01",
-  "visual_review_result": "I manually reviewed the three displayed trainval crops and confirmed no image-mask alignment issues.",
+  "visual_review": "pending",
   "files": [
     {
       "group": "trainval",
