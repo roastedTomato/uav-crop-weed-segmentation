@@ -224,6 +224,7 @@ English: Main unaugmented mask patches have verified original-image sources, and
 中文：使用固定随机种子 42，将 trainval 的 12 张原图分为 9 张训练图和 3 张验证图，并取得各自对应的标签路径。
 
 English: Use random seed 42 to split the 12 trainval originals into nine training images and three validation images, with their corresponding mask paths. 
+
 ## 3. 数据探索与预处理 / Data Exploration and Preprocessing
 
 - [ ] 展示 RGB、标签和叠加图，检查质量与类别比例。 / Display RGB images, masks, and overlays; inspect quality and class proportions.
