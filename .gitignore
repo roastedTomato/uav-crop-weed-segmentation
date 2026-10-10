@@ -16,6 +16,12 @@
 !/artifacts/SOURCE_SPLITS.json
 !/artifacts/SPLIT_CHECKS.json
 !/artifacts/PATCH_MANIFEST.jsonl
+!/01_data_preparation.ipynb
+!/02_majority_baseline.ipynb
+!/03_small_encoder_decoder.ipynb
+!/04_unet.ipynb
+!/05_evaluation_comparison.ipynb
+!/06_test_evaluation.ipynb
 
 # Generated and private files
 **/__pycache__/
