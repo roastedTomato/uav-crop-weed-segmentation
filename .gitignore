@@ -22,6 +22,7 @@
 !/04_unet.ipynb
 !/05_evaluation_comparison.ipynb
 !/06_test_evaluation.ipynb
+!/results
 
 # Generated and private files
 **/__pycache__/

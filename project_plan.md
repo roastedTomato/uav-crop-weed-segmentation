@@ -243,6 +243,7 @@ English: Use random seed 42 to split the 12 trainval originals into nine trainin
 - [ ] 设置损失、优化器、batch size、轮数与 early stopping。 / Configure loss, optimizer, batch size, epochs, and early stopping.
 - [ ] 固定种子，记录环境、训练设置和曲线。 / Fix seeds and record the environment, training settings, and curves.
 - [ ] 验证保存、加载与预测，准备 checkpoint。 / Verify saving, loading, and inference; prepare the checkpoint submission.
+- 保存的模型计算 CNN 的验证集 IoU、Dice 和 Mean IoU
 
 ## 5. U-Net / U-Net Training
 
