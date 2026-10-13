@@ -18,6 +18,18 @@ Evaluation uses **7 source images / 2,310 patches**. Scores are calculated from 
 
 U-Net improves Mean IoU by **3.29 percentage points** and Weed IoU by **6.53 percentage points** over the small CNN. The majority baseline predicts soil everywhere: its high soil IoU reflects the strong class imbalance, while its zero crop and weed IoU exposes its limitations.
 
+![Held-out test comparison of majority baseline, CNN and U-Net](results/figures/model_comparison_test.png)
+
+### Prediction examples
+
+Each panel shows the RGB input, ground-truth mask, CNN prediction and U-Net prediction. Grey denotes soil, blue denotes crop and orange denotes weeds.
+
+![Prediction comparison for test image 01](results/figures/test_01_prediction_comparison.png)
+
+![Prediction comparison for test image 04](results/figures/test_04_prediction_comparison.png)
+
+These are the patches with the most labelled weed pixels in their respective source images, rather than randomly sampled examples. In image 04, the CNN assigns some weed pixels to crop; U-Net also differs from the reference along object boundaries.
+
 ### Validation and generalisation
 
 | Model | Validation Mean IoU | Validation Weed IoU | Test Mean IoU | Test Weed IoU |
@@ -64,6 +76,14 @@ The recorded audit lists 2,970 training, 990 validation and 2,310 test patches. 
 | U-Net | Three pooling stages, 16/32/64-channel encoder blocks, a 128-channel bottleneck and three decoder stages with skip connections. |
 
 Both neural networks use ReLU convolution blocks, bottleneck spatial dropout (`0.2`) and a final 1 × 1 convolution with three-class softmax. Training uses Adam (`learning rate = 0.001`), sparse categorical cross-entropy with pixel weights, batch size **8**, up to **30 epochs**, and early stopping with patience **5**. The best checkpoint is saved according to validation loss.
+
+### Training curves
+
+The curves show training and validation loss for each recorded run. Checkpoint selection uses the lowest validation loss, rather than the final epoch.
+
+![Small CNN training and validation loss](results/figures/small_encoder_decoder_curves.png)
+
+![U-Net training and validation loss](results/figures/unet_curves.png)
 
 ## Run locally
 
